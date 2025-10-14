@@ -16,12 +16,13 @@ function LoginPage() {
       password,
       redirect: false,
     });
-
+    console.log(result);
     if (result?.error) {
       console.log(result.error);
     } else {
       router.push("/");
     }
+
   };
 
   return (
