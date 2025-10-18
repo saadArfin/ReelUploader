@@ -1,4 +1,5 @@
 "use client";
+
 import { signIn } from "next-auth/react";
 import { useRouter } from "next/navigation";
 import React, { useState } from "react";
@@ -46,7 +47,7 @@ function LoginPage() {
         <button onClick={() => router.push("/register")}>Register</button>
       </div>
     </div>
-  );
+  )
 }
 
 export default LoginPage;
